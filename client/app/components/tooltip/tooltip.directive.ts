@@ -28,15 +28,8 @@ class TooltipState {
             y=0
         } = {} as ITooltipState) {
 
-        //this.shouldShow = stateInitConfig.shouldShow || true;
-        //
-        //this.isShowing = stateInitConfig.isShowing || false;
-        //
-        //this.message = stateInitConfig.message || '';
-        //
-        //this.x = stateInitConfig.x || 0;
-        //
-        //this.y = stateInitConfig.y || 0;
+        Object.assign( this, { shouldShow, isShowing, message, x, y } );
+
     }
 
 }
