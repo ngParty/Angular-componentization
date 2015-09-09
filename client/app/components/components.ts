@@ -1,10 +1,10 @@
 import * as angular from 'angular';
 import Home from './home/home';
 import About from './about/about';
+//import Tooltip from './tooltip/tooltip'
 
-let componentModule = angular.module('app.components', [
-	Home.name,
-	About.name
+const componentModule = angular.module('app.components', [
+    //Tooltip.name
 ]);
 
 export default componentModule;
