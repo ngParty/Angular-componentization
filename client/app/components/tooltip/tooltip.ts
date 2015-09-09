@@ -1,6 +1,6 @@
 import * as angular from 'angular';
 import Tooltip from './tooltip.directive';
-//import tooltipMessage from './tooltipMessage.directive'
+import tooltipMessage from './tooltipMessage.directive'
 //import tooltipOverflow from './tooltipOverflow.directive'
 
 const ngModule = angular.module( 'tooltip', [] )
@@ -10,7 +10,7 @@ const ngModule = angular.module( 'tooltip', [] )
     .controller( 'NyTooltip', Tooltip )
 
     // decorator
-    //.directive( 'nyTooltipMessage', tooltipMessage )
+    .directive( 'nyTooltipMessage', tooltipMessage )
 
     // decorator
     //.directive( 'nyTooltipOverflow', tooltipOverflow )

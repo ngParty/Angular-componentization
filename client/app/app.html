@@ -4,13 +4,12 @@
     <h1>Angular componentization</h1>
 
     <h3>Regular tooltip</h3>
-    <span ny-tooltip >Hover over me!</span>
-    <!--<span ny-tooltip ny-tooltip-message="'Hello World!'">Hover over me!</span>-->
+    <span ny-tooltip ny-tooltip-message="'Hello World!'">Hover over me!</span>
 
 
     <h3>Tooltip that optionally shows if content overflows</h3>
 
     <!--<p style="max-width: 100px;" ny-tooltip ny-tooltip-message="vm.longtext" ny-tooltip-overflow>{{vm.longtext}}</p>-->
-    <p style="max-width: 100px;" ny-tooltip>{{vm.longtext}}</p>
+    <p style="max-width: 100px;" ny-tooltip ny-tooltip-message="vm.longtext">{{vm.longtext}}</p>
     <input type="text" ng-model="vm.longtext" name="longtext">
 </div>
