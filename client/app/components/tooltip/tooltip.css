@@ -1,0 +1,14 @@
+.ny-tooltip {
+    position: absolute;
+    padding: 1rem;
+    background-color: rgba(220, 76, 53, 0.8);
+    border: 1px solid rgb(128, 16, 32);
+    border-radius: .5em;
+    color: whitesmoke;
+}
+
+[ny-tooltip-overflow] {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
